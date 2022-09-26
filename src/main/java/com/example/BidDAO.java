@@ -26,7 +26,7 @@ public class BidDAO {
 		
 		List<Ask> AskList = ar.findbyprice(b.getPrice(),b.getSymbol());
 //		AskList.sort((o1, o2)-> o1.getPrice().compareTo(o2.getPrice()));
-		System.out.println(AskList.get(0)); 
+	
 
 		int i = 0;
 		if (AskList.size() != 0 ) {

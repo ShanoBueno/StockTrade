@@ -38,7 +38,8 @@ public class AskController {
 		a.setQuantity(Integer.parseInt(request.getParameter("quantity")));
 		a.setPrice(Double.parseDouble(request.getParameter("price"))); 
 		
-		ar.save(a);
+		ad.executeAskOrder(a); 
+
 		
 		mv.setViewName("display.jsp"); 
 		return mv; 
